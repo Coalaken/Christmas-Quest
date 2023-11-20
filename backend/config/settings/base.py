@@ -1,11 +1,11 @@
+SECRET_KEY = NotImplemented
 
-
-SECRET_KEY = 'django-insecure-))5px88vxx$07d!+iiy2ko!f8z!+dz3)&6kr52-rue1@iux5=p'
-
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
+
+# Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -28,7 +28,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'backend.urls'
+ROOT_URLCONF = 'config.urls'
 
 TEMPLATES = [
     {
@@ -46,7 +46,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'backend.wsgi.application'
+WSGI_APPLICATION = 'config.wsgi.application'
 
 
 # Database

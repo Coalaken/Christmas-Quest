@@ -4,5 +4,6 @@ services:
   web:
     build:
         context: .
+        command: python3 -m backend.manage runserver
     volumes:
       - .:/usr/src/
