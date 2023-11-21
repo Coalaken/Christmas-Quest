@@ -4,6 +4,8 @@ services:
   web:
     build:
         context: .
-        command: python3 -m backend.manage runserver
+    command: python3 backend/manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/usr/src/
+    ports:
+      - 8000:8000
